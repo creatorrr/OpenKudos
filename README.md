@@ -38,6 +38,8 @@ Specs
 - /stats/set-id             # Return stats for set-id (return 0 if does not exist)
 - /                         # Print all stats
 
+Note: id's are _alpahnumeric_
+
 Ideas
 -----
 
