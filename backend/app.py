@@ -31,7 +31,7 @@ class Handler(webapp.RequestHandler):
     logging.info('Some bloke tried to initiate a ' + server.action)
     
     if response['return_type'] == 'text':
-        self.response.headers['Content-Type'] = 'text/text'
+        self.response.headers['Content-Type'] = 'text/html'
         result = response['result']
     
     elif response['return_type'] == 'html':

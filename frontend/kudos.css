@@ -1,0 +1,208 @@
+/* animations */
+
+@-moz-keyframes hoverSelect 
+	{       
+	0% {
+		-moz-transform: scale(0.1); 
+	}
+	100% {
+		-moz-transform: scale(1.1);  
+	}
+}
+
+@-webkit-keyframes hoverSelect
+	{       
+	0% {
+		-webkit-transform: scale(0.1); 
+	}
+	100% {
+		-webkit-transform: scale(1.1);  
+	}
+}
+
+@-webkit-keyframes hoverPulse
+	{       
+	0% {
+		-webkit-transform: scale(0.2); 
+	}
+	50% {
+		-webkit-transform: scale(0.35);
+	}
+	100% {
+		-webkit-transform: scale(0.2);  
+	}
+}
+
+@-moz-keyframes hoverPulse
+	{       
+	0% {
+		-moz-transform: scale(0.2); 
+	}
+	50% {
+		-moz-transform: scale(0.35);
+	}
+	100% {
+		-moz-transform: scale(0.2);  
+	}
+}
+
+/* Generic Styles */
+
+figure.kudos_button {
+	width: 100px;
+	height: 60px;
+	text-align: center;
+}
+
+div.circle {
+	position: relative;
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	border-radius: 40px;
+	background-color: transparent;
+	border: 4px solid #000;
+	margin: 0 auto;
+}
+
+figure.kudos_button a.filled {
+    display: block;
+	position: absolute;
+	background-color: #000;
+	width: 40px;
+	height: 40px;
+	-webkit-border-radius: 40px;
+	-moz-border-radius: 40px;
+	border-radius: 40px;
+	top: 0px;
+	-webkit-transform: scale(0.3);
+	-moz-transform: scale(0.3);
+}
+
+
+figure.kudos_button p {
+	line-height: 18px;
+	font-family: "freight-sans-pro", sans-serif;
+	font-weight: 900;
+	margin: 0;
+	margin-top: 1px;
+
+	font-size: 20px;
+	color: #000;
+	text-align: center;
+
+}
+
+figure.kudos_button .status {
+		margin-bottom: 5px;
+		margin-top: 4px;
+}
+
+figure.kudos_button .status:after {
+    content: "Sent!";
+}
+
+figure.kudos_button .count {
+		margin-bottom: 5px;
+		margin-top: 4px;
+}
+
+figure.kudos_button .count:after {
+    content: " Kudos";
+}
+
+/* APP STATES */
+
+/* waiting */
+figure.kudos_button.waiting a.filled {
+	-webkit-animation-name: hoverPulse;
+	-moz-animation-name: hoverPulse;
+	-webkit-animation-duration: 3s;
+	-moz-animation-duration: 3s;
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	-webkit-animation-timing-function:linear;
+	-moz-animation-timing-function: linear;
+}
+
+figure.kudos_button.waiting .status {
+    display: none;
+}
+
+/* hover */
+figure.kudos_button.waiting:hover a.filled {
+  -webkit-animation-name: hoverSelect;
+  -moz-animation-name: hoverSelect;
+	-webkit-animation-duration: 1s;
+	-moz-animation-duration: 1s;
+	-webkit-animation-iteration-count: 1;
+	-moz-animation-iteration-count: 1;
+	-webkit-animation-timing-function:linear;
+	-moz-animation-timing-function:linear;
+}
+
+figure.kudos_button.waiting:hover .count {
+    display: none;
+}
+
+figure.kudos_button.waiting:hover .status {
+    display: block;
+}
+figure.kudos_button.waiting:hover .status:after {
+    content: "Dont Move"
+}
+
+/* done */
+figure.kudos_button.done .status {
+	display: block;
+	text-transform: uppercase;
+}
+
+figure.kudos_button.done .count {
+    display: none;
+}
+
+figure.kudos_button.done div.circle {
+	background: #000 center center no-repeat;
+	border: 4px solid #000;
+}
+
+figure.kudos_button.done a.filled {
+	display: none;
+}
+
+figure.kudos_button a.filled {
+	position: absolute;
+	background-color: #000;
+	width: 40px;
+	height: 40px;
+	-webkit-border-radius: 40px;
+	-moz-border-radius: 40px;
+	border-radius: 40px;
+	top: 0px;
+	-webkit-transform: scale(0.2);
+	-moz-transform: scale(0.2);
+}
+
+figure.kudos_button.done:hover .status:after {
+    content: "Sent!";
+}
+
+/* HIDE STUFF */
+.hide {
+    display: none;
+}
+
+
+iframe{
+    height: 1.8em;
+    display: inline;
+    width: 4em;
+    margin-right: -2em;
+    margin-left: 1em;
+    padding: 0px;
+    border: none;
+    overflow: hidden;
+    background: transparent;
+    -webkit-transform: scale(1.8) rotate(15deg);
+}

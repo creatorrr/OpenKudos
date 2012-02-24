@@ -59,10 +59,18 @@ def parse_the_bloody(request):
     return options
     
 def unpack(response):
-    """This one unpacks the shortlinks api response."""
+    """This one unpacks the response."""
     
     import simplejson as json
     return json.loads(response)
+
+def pack(result):
+    """This one unpacks the result."""
+    
+    result_dict={}
+    result_dict['data']=result
+    import simplejson as json
+    return "flyingpigscantfly(%s)" % json.dumps(result_dict)
 
 def hitman(bullets = {}):
     """Render template and return it"""

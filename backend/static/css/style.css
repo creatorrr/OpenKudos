@@ -241,6 +241,14 @@ a.more:hover:after{
     display: inline;
 }
 
+/* Hide IFrames */
+iframe{
+    display: none;
+    height: 0;
+    width: 0;
+}
+
+
 /* Form Styling */
 input[type=text]{
     display: block;
