@@ -1,0 +1,59 @@
+There is no charge for awesomeness... or attractiveness.;Kung Fu Panda;http://www.google.co.in/search?ie=UTF-8&q=kung+fu+panda+awesomeness
+Any fool can write code that a computer can understand. Good programmers write code that humans can understand.;Martin Fowle;http://thc.org/root/phun/unmaintain.html
+Never ascribe to malice, that which can be explained by incompetence.;Napoleon;http://en.wikipedia.org/wiki/Malice_(legal_term)
+Programs must be written for people to read, and only incidentally for machines to execute.;Abelson;http://www.codinghorror.com/blog/2006/05/code-smells.html
+Before software can be reusable it first has to be usable.;Ralph Johnson;http://www.devtopics.com/20-famous-software-disasters/
+When someone says, 'I want a programming language in which I need only say what I want done,' give him a lollipop.;Alan Perlis;http://www.sugarfactory.com/index.php/yum/signature_series
+If at first you don't succeed, call it version 1.0;Anonymous;http://git-scm.com/
+There are 10 types of people in the world: those who understand binary, and those who don't.;Anonymous;http://xkcd.com/99/
+Real men don't use backups, they post their stuff on a public ftp server and let the rest of the world make copies.;Linus Torvalds;https://plus.google.com/102150693225130002912
+If you think about computer programming, it's as antisocial as it gets.;Shawn Fanning;http://en.wikipedia.org/wiki/Shawn_Fanning
+I have this hope that there is a better way.;Guido van Rossum;http://python.org/getit
+I'll be back.;The Terminator;http://www.imdb.com/title/tt0088247/quotes
+Made it, Ma! Top of the world!;White Heat;http://www.imdb.com/title/tt0042041/quotes
+Fuh-get about it!;Donnie Brasco;http://www.imdb.com/title/tt0119008/quotes
+I hope this turns out better than your plan to cook rice in your stomach by eating it raw and then drinking boiling water...;Kung Fu Panda 2;http://www.imdb.com/title/tt1302011/quotes
+The less confident you are, the more serious you have to act.;Tara Ploughman;http://xkcd.com/836/
+That language is an instrument of human reason, and not merely a medium for the expression of thought, is a truth generally admitted.;George Boole;http://en.wikipedia.org/wiki/George_Boole#Alleged_philosophical_background_Laws_of_Thought
+The best way to predict the future is to invent it.;Alan Kay;http://www.foundersfund.com/
+Dealing with failure is easy: Work hard to improve. Success is also easy to handle: You've solved the wrong problem. Work hard to improve.;Alan Perlis;http://www.azarask.in/blog/post/the-wrong-problem/
+The imagination of nature is far, far greater than the imagination of man.;Richard Feynman;http://ngm.nationalgeographic.com/visions-of-earth/visions-earth-2011
+We're even wrong about which mistakes we're making.;Carl Winfeld;http://www.ted.com/talks/diana_laufenberg_3_ways_to_teach.html
+However little television you watch, watch less.;David McCullough;http://en.wikipedia.org/wiki/Television#Social_aspects_and_effects_on_children
+filter(P, S) is almost always written clearer as [x for x in S if P(x)];Guido van Rossum;http://shop.oreilly.com/product/9780596510046.do
+People don't change their minds. They die, and are replaced by people with different opinions.;Arturo Albergati;http://xkcd.com/811/
+PowerPoint makes us stupid.;General James N. Mattis;http://xkcd.com/365/
+Don't feel bad. A lot of people have no talent.;John Cleese;http://www.brainyquote.com/quotes/topics/topic_funny.html
+Laziness is nothing more than the habit of resting before you get tired.;Jim Carrey;http://xkcd.com/89/
+Sticks and stones may break my bones, but words will make me go in a corner and cry by myself for hours.;Eric Idle;http://xkcd.com/782/
+We've discovered that the less we do, the more money we make.;Eric Idle;http://xkcd.com/512/
+I like nonsense, it wakes up the brain cells;DR SEUSS;http://xkcd.com/808/
+A child of five would understand this. Send someone to fetch a child of five.;Groucho Marx;http://dictionary.reference.com/browse/impunity
+Behind every great man is a woman rolling her eyes.;Jim Carrey;http://xkcd.com/322/
+Between two evils, I always pick the one I never tried before.;Mae West;http://xkcd.com/792/
+Go to Heaven for the climate, Hell for the company.;Mark Twain;http://www.divinecomedy.org/
+How many people here have telekenetic powers? Raise my hand.;Emo Philips;http://xkcd.com/628/
+He who laughs most, learns best.;John Cleese;http://www.sciencedaily.com/releases/2008/01/080124200913.htm
+All the great things are simple, and many can be expressed in a single word: freedom, justice, honor, duty, mercy, hope.;Winston Churchill;http://www.brainyquote.com/quotes/keywords/freedom.html
+Change your thoughts and you change your world;Norman Vincent Peale;
+All experience is an arch wherethrough gleams that untravelled world whose margin fades for ever and for ever when I move.;Alfred Lord Tennyson;
+Every moment is an experience;Jake Roberts;
+Experience comprises illusions lost, rather than wisdom gained.;Joseph Roux;
+A man of courage is also full of faith.;Marcus Tullius Cicero;
+Faith is not something to grasp, it is a state to grow into.;Mohandas Gandhi;
+Faith is reason grown courageous.;Sherwood Eddy;
+Believe you can and you're halfway there.;Theodore Roosevelt;
+Great hopes make great men.;Thomas Fuller;
+A little perspective, like a little humor, goes a long way.;Allen Klein;
+A dream is the bearer of a new possibility, the enlarged horizon, the great hope.;Howard Thurman;
+A person can grow only as much as his horizon allows.;John Powell;
+Creativity is the power to connect the seemingly unconnected.;William Plomer;
+I like the smell of film. I just like knowing there's film going through the camera.;Steven Spielberg;
+Pick up a camera. Shoot something. Put your name on it as director.;James Cameron;
+Dreams are often most profound when they seem the most crazy.;Sigmund Freud;
+You have to go on and be crazy. Craziness is like heaven.;Jimi Hendrix;
+A question that sometimes drives me hazy: am I or are the others crazy?;Albert Einstein;
+There is no charge for awesomeness... or attractiveness.;Kung Fu Panda;
+He was so deadly, in fact, that his enemies would go blind from over-exposure to pure awesomeness!;Kung Fu Panda;
+One often meets his destiny on the road he takes to avoid it.;Kung Fu Panda;
+The world is moved along, not only by the mighty shoves of its heroes, but also by the aggregate of the tiny pushes of each honest worker.;Helen Keller;

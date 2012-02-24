@@ -34,7 +34,7 @@ Specs
 - /incr/set-id              # increment existing set-id or create new id
 - /decr/set-id              # decrement existing set-id (dont create new id)
 - /newset/name/secret       # create new set (if secret is okay)
-- /backup                   # backup stats to datastore (accessed via cron)
+- /backup                   # **proposed** backup stats to datastore (accessed via cron)
 - /stats/set-id             # Return stats for set-id (return 0 if does not exist)
 - /                         # Print all stats
 
@@ -46,5 +46,6 @@ Ideas
 Some ideas for future improvements:
 
 * Use cookies to mark people off.
+* Make automated backups of memcache.
 
 

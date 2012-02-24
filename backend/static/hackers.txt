@@ -1,0 +1,22 @@
+/* the hacker portal */
+/* humanstxt.org */
+
+/* WELCOME */
+  WTF?: Addressed to obsessed hackers.
+
+/* RESPECTS */
+  For: Awesome Hackers.
+  Feel Free: To contact me { singh [at] diwank [dot] name}
+  I: Would Love to Meet You!!
+  Coffee: I make nice coffee. If you're hanging around in New Delhi, let me know.
+
+/* WHO */
+  The Bug Fixer: Diwank Singh Tomer
+  Site: http://singh.diwank.name
+  Twitter: http://twitter.com/meetdagod
+  Location: New Delhi, India
+
+/* SITE */
+  Standards: HTML5, CSS3
+  Components: jQuery
+  Software: Python, App-Engine

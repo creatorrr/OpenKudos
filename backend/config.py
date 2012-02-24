@@ -7,9 +7,11 @@ _DEBUG = False                         # Set to True if stack traces should be s
 _GA_ID = 'UA-XXXXXXXX-X'               # Google Analytics Code
 
 # Seed User (First user)
-_EMAIL = 'singh@diwank.name'    # Admin account; Use Apps account if you are using Short Links.
-_SECRET = "flyingpigs"       # Edit this to something random (try to be funny.)
+_EMAIL = 'singh@diwank.name'           # Admin account
+_SECRET = "flyingpigs"                 # Edit this to something random (try to be funny.)
 
+
+# STOP EDITING.
 
 if __name__ == "__main__":
-    print "STFU."                        # You know people do this all the time.
+    print "STFU."                      # You know people do this all the time.

@@ -1,0 +1,33 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+/* APP */
+  What?: OpenKudos - An open source port of Dustin Curtis' Kudos Button
+  Why?: Kudos button is so damn cool.
+  How?: Google App Engine Goodness!!!
+
+/* TEAM */
+  The Bug Fixer: Diwank Singh Tomer
+  Site: http://singh.diwank.name
+  Twitter: http://twitter.com/meetdagod
+  Location: New Delhi, India
+
+  Inspiration: Dustin Curtis
+  Site: http://dcurt.is
+  
+  More: So many more friends, beta-testers, critics. Thanks a ton, people!
+  
+/* THANKS */
+  Names (& URL): Sydney George Hopkins 		(http://en.wikipedia.org/wiki/Mister_God,_This_Is_Anna#Author),
+                Larry & Sergey			(http://google.com),
+                App-Engine 			(http://code.google.com/appengine),
+                Guido Van Rossum		(http://python.org),
+                Paul Irish 			(http://github.com/paulirish/HTML5-Boilerplate),
+                John Resig			(http://jquery.com),
+                Randall Munroe 			(http://xkcd.com/about/)
+
+/* SITE */
+  Standards: HTML5, CSS3
+  Components: HTML5-Boilerplate, jQuery
+  Software: Python
+  Cloud: Google App-Engine

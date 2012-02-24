@@ -1,0 +1,89 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>OpenKudos</title>
+	<meta name="description" content="">
+	<meta name="author" content="Diwank Singh Tomer">
+
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="stylesheet" href="css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Nixie+One|Erica+One' rel='stylesheet' type='text/css'>
+
+
+	<!--[if lt IE 9]>
+	<script src="js/libs/html5-3.3-respond-1.1.0.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div id="main-container">
+		<div id="main" class="wrapper clearfix">
+
+			
+			<aside>
+                <h2>OpenKudos is here.</h2>
+
+                <p>Hey there!</p><br/>
+                
+                <p class="mobile">This is the open source port of dcurt.is Kudos buttons.<br/>
+                </p>
+                
+                <p class="no-mobile">Dustin Curtis is one amazing guy.<br/>
+                He makes uber-cool web things.<br/>
+                One of which is the sleek Kudos button on his blog.<br/>
+                Well, I copied the idea (Kinda.)<br/><br/>
+                Just install it on Google App Engine and start getting Kudos.<a class="more" href="/humans.txt">[^</a>
+                </p>
+                <p>
+                Start with <a href="http://github.com/creatorrr/OpenKudos">forking me on GitHub.</a>
+                </p>
+
+			</aside>
+
+            <br/>
+            
+            <article>
+                {% if action %}
+                    <h1> Kudos received so far. </h1>
+                    <hr>
+					{% for stat in stats %}
+                        <h3><strong>{{ stat.group.name }} - {{ stat.name }}</strong> = {{ stat.kudos }}
+                            <small><a href="/incr/{{ stat.group.name }}-{{ stat.name }}/">[+1]</a></small>
+                            <small><a href="/decr/{{ stat.group.name }}-{{ stat.name }}/">[-1]</a></small>
+                        </h3>
+                        <hr>
+                    {% endfor %}
+				{% else %}
+				    <h1> Hello There! </h1>
+					<a href="http://github.com/creatorrr/OpenKudos"> Fork me on GitHub. </a>
+				{% endif %}
+            </article>
+			
+		</div> <!-- #main -->
+	</div> <!-- #main-container -->
+
+	<div id="footer-container">
+		<footer class="wrapper">
+			<h3>{{ quotation }}</h3>
+			<blockquote>{{ quotation_author }}</blockquote>
+		</footer>
+	</div>
+
+
+<script src="js/script.js"></script>
+<script>
+	var _gaq=[['_setAccount','{{analytics_id}}'],['_trackPageview']];
+	(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+	g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+	s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+
+</body>
+</html>
+

@@ -23,11 +23,11 @@ def parse_the_bloody(request):
     request = urllib.unquote(request)
     
     # divide and rule. ;)
-    arguments = request.lower().split('/')
+    arguments = request.split('/')
     
     # dirty hack #1: stupid url-params extension
     while len(arguments) < 3:
-        arguments.append('doesnotexist')
+        arguments.append('blah')
     
     # setting up the field
     ## TODO: As of this writing, We ain't filtering requests from idiots.
@@ -35,7 +35,7 @@ def parse_the_bloody(request):
     ## Beware: Dangerous stuff is coming through.
     options = {}
     
-    options['action'] = arguments[0]
+    options['action'] = arguments[0].lower()
     
     if options['action'] in ("decr", "incr", "stats"):
         set_id = arguments[1]
@@ -64,11 +64,11 @@ def unpack(response):
     import simplejson as json
     return json.loads(response)
 
-def hitman(template = "index", bullets = {}):
+def hitman(bullets = {}):
     """Render template and return it"""
     
     # template variables
-    template_file = os.path.abspath('templates/'+template+'.html')
+    template_file = os.path.abspath('templates/index.html')
     template_fallback = os.path.abspath('templates/ohshit.html')
 
     quote=getQuote()
@@ -82,11 +82,11 @@ def hitman(template = "index", bullets = {}):
 
     vars.update(bullets)                            # You don't mess with the hitman. (Just update the response)
 
-    try:
-    	return webapp.template.render(template_file, vars, debug=config._DEBUG)
-    except:
-        logging.error('Webapp is an Ass. Couldn\'t even load a template.')
-    	return webapp.template.render(template_fallback, vars, debug=config._DEBUG)
+    #try:
+    return webapp.template.render(template_file, vars, debug=config._DEBUG)
+    #except:
+  #      logging.error('Webapp is an Ass. Couldn\'t even load a template.')
+   # 	return webapp.template.render(template_fallback, vars, debug=config._DEBUG)
     
     
 if __name__ == "__main__":

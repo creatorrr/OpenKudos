@@ -49,9 +49,8 @@ class Model(object):
         key = db.Key.from_path('Set', set_name,
                                 'ID', id_string
                                )
-        try:
-            value = db.get(key)
-        except:
+        value = db.get(key)
+        if value is None:
             return self.add_id(set_name, id_string)
         
         value.kudos = value.kudos + score

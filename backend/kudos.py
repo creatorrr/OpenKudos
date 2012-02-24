@@ -73,19 +73,14 @@ class Kudos(object):
                 return True
             except:
                 return False
-        else:# Data Store Fetch
+        else:
             return False
 
     def blah(self):
         """Gets all stats."""
         
-        values = Data.get_all()
-        
-        values_library = {}                   # storing bookmarks in a dictionary as key-value pairs
-        for value in values:
-            values_library[value.group.name+':'+value.name] = value.kudos
-
-        return values_library
+        values = Data.get_all()        
+        return values
 
     def respond(self):
         """The big bully of the class."""
@@ -97,21 +92,21 @@ class Kudos(object):
 
         if self.action == "incr":
             self.incr()
-            response.update(result = self.stats(), type = "text")
+            response.update(result = self.stats(), return_type = "text")
         
         elif self.action == "decr":
             self.decr()
-            response.update(result = self.stats(), type = "text")
+            response.update(result = self.stats(), return_type = "text")
                     
         elif self.action == "stats":
-            response.update(result = self.stats(), type = "text")
+            response.update(result = self.stats(), return_type = "text")
                             
         elif self.action == "newset":
-            response.update(result = str(self.newset()), type = "text")
+            response.update(result = str(self.newset()), return_type = "text")
         
         elif self.action == "blah":
             all_stats = self.blah()
-            response.update(stats = all_stats, type = "page")
+            response.update(stats = all_stats, return_type = "html")
         
         else: pass                          # Who cares?
         

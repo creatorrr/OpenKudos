@@ -30,13 +30,13 @@ class Handler(webapp.RequestHandler):
     response = server.respond()
     logging.info('Some bloke tried to initiate a ' + server.action)
     
-    if response.type == 'text':
+    if response['return_type'] == 'text':
         self.response.headers['Content-Type'] = 'text/text'
-        result = response.result
+        result = response['result']
     
-    elif response.type == 'text':
+    elif response['return_type'] == 'html':
         self.response.headers['Content-Type'] = 'text/html'
-        result = hitman("action", response)     # Renders template. No bloodshed.
+        result = hitman(response)     # Renders template. No bloodshed.
     
     self.response.out.write(result)           # Flush response to her
     return
@@ -44,7 +44,7 @@ class Handler(webapp.RequestHandler):
 
 # Map url's to handlers
 urls = [
-    (r'/(.*)', ShortenHandler), # handles actions
+    (r'/(.*)', Handler), # handles actions
 ]
 
 application = webapp.WSGIApplication(urls, debug=config._DEBUG)
