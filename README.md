@@ -26,11 +26,13 @@
 * Just clone into this git repository.
 * Edit app.yaml and config.py
 * Deploy to appengine!
+* Run http://your-kudos-app-id.appspot.com/newset/SetName/YourSecret to create a new set named SetName where YourSecret is the secret you set in config.py
 
 ### Frontend
 * Include kudos.css and kudos.css
 * Copy and paste button snippet from kudos.html
 * Replace a[href] with http://your-kudos-app-id.appspot.com/incr/SetName-IDName
+* That's it (Yay!)
 
 * * *
 
@@ -73,7 +75,11 @@ You can write to me at: *singh@diwank.name*
 ### Examples
 
 #### A List of My Ideas
-* **Frontend** http://idea.diwank.name
+* **Used here** http://idea.diwank.name
+* **Backend** http://kudos.diwank.name
+
+#### My Blag
+* **Used here** http://blag.diwank.name/Startups/About-YC
 * **Backend** http://kudos.diwank.name
 
 * * *
@@ -91,7 +97,7 @@ Some ideas for improvements:
 
 ## License
 
-Copyright (c) 2012 Jerome Gravel-Niquet
+Copyright (c) 2012 Diwank Singh Tomer
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
