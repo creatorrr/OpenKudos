@@ -13,12 +13,12 @@
 
 	<meta name="viewport" content="width=device-width">
 
-	<script src="js/jquery.js"></script>
-    <script src="js/jquery.iframe.js"></script>
+	<script src="/js/jquery.js"></script>
+    <script src="/js/jquery.iframe.js"></script>
     
-    <script src="js/kudos.js"></script>
+    <script src="/js/kudos.js"></script>
     
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 	<link href='http://fonts.googleapis.com/css?family=Nixie+One|Erica+One' rel='stylesheet' type='text/css'>
 
 
@@ -55,15 +55,22 @@
             
             <article>
                 {% if action %}
-                    <h1> Kudos received so far. </h1>
-                    <hr>
-					{% for stat in stats %}
-                        <h3><strong>{{ stat.group.name }} - {{ stat.name }}</strong> = {{ stat.kudos }}
-                            <small><a href="/incr/{{ stat.group.name }}-{{ stat.name }}/" class="kudos">[+1]</a></small>
-                            <small><a href="/decr/{{ stat.group.name }}-{{ stat.name }}/" class="kudos">[-1]</a></small>
-                        </h3>
+                    {% if stats %}
+                        <h1> Kudos received so far. </h1>
                         <hr>
-                    {% endfor %}
+					    {% for stat in stats %}
+                            <h3><strong>{{ stat.group.name }} - {{ stat.name }}</strong> = {{ stat.kudos }}
+                                <small><a href="/decr/{{ stat.group.name }}-{{ stat.name }}/" class="kudos">[-1]</a></small>
+                                <small><a href="/incr/{{ stat.group.name }}-{{ stat.name }}/" class="kudos">[+1]</a></small>
+                            </h3>
+                            <hr>
+                        {% endfor %}
+                    {% endif %}
+                    {% if result %}
+                        <h1> Your wish is my command. </h1>
+                        <hr>
+                        <h3><strong>Set created. :D</strong></h3>
+                    {% endif %}
 				{% else %}
 				    <h1> Hello There! </h1>
 					<a href="http://github.com/creatorrr/OpenKudos"> Fork me on GitHub. </a>
@@ -81,7 +88,7 @@
 	</div>
 
 
-<script src="js/script.js"></script>
+<script src="/js/script.js"></script>
 <script>
 	var _gaq=[['_setAccount','{{analytics_id}}'],['_trackPageview']];
 	(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
