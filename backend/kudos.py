@@ -37,7 +37,7 @@ class Kudos(object):
         """Adds Kudos."""
         
         try:
-            memcache.incr(key = "%s:%s" % (self.set, self.id), initial_value = 0)
+            memcache.incr(key = "%s:%s" % (self.set, self.id), initial_value = abs(int(self.stats())))
             # Data Store Write
             Data.incr_kudos(self.set, self.id)
             return True
@@ -48,7 +48,7 @@ class Kudos(object):
         """Subtract Kudos."""
         
         try:
-            memcache.decr(key = "%s:%s" % (self.set, self.id), initial_value = 1)
+            memcache.decr(key = "%s:%s" % (self.set, self.id), initial_value = abs(int(self.stats())))
             # Data Store Write
             Data.incr_kudos(self.set, self.id, score = -1)
             return True
@@ -62,7 +62,10 @@ class Kudos(object):
         if kudos is not None:
             return kudos
         else:# Data Store Fetch
-            return Data.get_kudos(self.set, self.id)
+            logging.info("bamboo")
+            kudos = Data.get_kudos(self.set, self.id)
+            memcache.add(key = "%s:%s" % (self.set, self.id), value = abs(kudos))
+            return kudos
 
     def newset(self):
         """Adds set."""
@@ -102,11 +105,14 @@ class Kudos(object):
             response.update(result = self.stats(), return_type = "text")
                             
         elif self.action == "newset":
-            response.update(result = str(self.newset()), return_type = "text")
+            response.update(result = self.newset(), return_type = "html")
         
         elif self.action == "blah":
             all_stats = self.blah()
             response.update(stats = all_stats, return_type = "html")
+        elif self.action == "flush":
+            flush = memcache.flush_all()
+            response.update(result = flush, return_type = "text")
         
         else: pass                          # Who cares?
         

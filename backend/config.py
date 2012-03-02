@@ -8,7 +8,7 @@ _GA_ID = 'UA-XXXXXXXX-X'               # Google Analytics Code
 
 # Seed User (First user)
 _EMAIL = 'singh@diwank.name'           # Admin account
-_SECRET = "flyingpigs"                 # Edit this to something random (try to be funny.)
+_SECRET = "flyingpigs"                 # Edit this to your alphanumeric secret (try to be funny.)
 
 
 # STOP EDITING.

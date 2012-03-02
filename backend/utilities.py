@@ -46,6 +46,8 @@ def parse_the_bloody(request):
         options['set'] = arguments[1]
         options['secret'] = arguments[2]
     
+    elif options['action'] == "flush":pass
+    
     else:
         options['action'] = "blah"
     

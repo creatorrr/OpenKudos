@@ -24,7 +24,7 @@ class Handler(webapp.RequestHandler):
              - request: the request. [Sigh.]
     """
     
-    options = parse_the_bloody(request)         # Does what it says.
+    options = parse_the_bloody(request)       # Does what it says.
     server = Kudos(options)
     
     response = server.respond()
@@ -36,7 +36,7 @@ class Handler(webapp.RequestHandler):
     
     elif response['return_type'] == 'html':
         self.response.headers['Content-Type'] = 'text/html'
-        result = hitman(response)     # Renders template. No bloodshed.
+        result = hitman(response)             # Renders template. No bloodshed.
     
     self.response.out.write(result)           # Flush response to her
     return
