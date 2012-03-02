@@ -1,0 +1,4 @@
+cron:
+- description: daily memcache flush
+  url: /flush
+  schedule: every 24 hours
