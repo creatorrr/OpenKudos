@@ -29,7 +29,7 @@
 * Run http://your-kudos-app-id.appspot.com/newset/SetName/YourSecret to create a new set named SetName where YourSecret is the secret you set in config.py
 
 ### Frontend
-* Include kudos.css and kudos.css
+* Include kudos.js and kudos.css
 * Copy and paste button snippet from kudos.html
 * Replace a[href] with http://your-kudos-app-id.appspot.com/incr/SetName-IDName
 * That's it (Yay!)
