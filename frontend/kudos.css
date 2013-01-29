@@ -1,58 +1,70 @@
-/* animations */
+/* =================================
 
-@-moz-keyframes hoverSelect 
-	{       
+	Table of Contents:
+	0. Animations
+	1. General Styles
+	3. States
+	4. Hidden Stuff
+	
+   ================================= */
+
+/* === 0. ANIMATIONS === */
+
+/* Hover Select */
+
+@-moz-keyframes hoverSelect {       
 	0% {
 		-moz-transform: scale(0.1); 
 	}
+	
 	100% {
 		-moz-transform: scale(1.1);  
 	}
 }
 
-@-webkit-keyframes hoverSelect
-	{       
+@-webkit-keyframes hoverSelect {       
 	0% {
 		-webkit-transform: scale(0.1); 
 	}
+	
 	100% {
 		-webkit-transform: scale(1.1);  
 	}
 }
 
-@-webkit-keyframes hoverPulse
-	{       
+/* Hover Pulse */
+
+@-webkit-keyframes hoverPulse{       
 	0% {
 		-webkit-transform: scale(0.2); 
 	}
+	
 	50% {
 		-webkit-transform: scale(0.35);
 	}
+	
 	100% {
 		-webkit-transform: scale(0.2);  
 	}
 }
 
-@-moz-keyframes hoverPulse
-	{       
+@-moz-keyframes hoverPulse {       
 	0% {
 		-moz-transform: scale(0.2); 
 	}
+	
 	50% {
 		-moz-transform: scale(0.35);
 	}
+	
 	100% {
 		-moz-transform: scale(0.2);  
 	}
 }
 
-/* Generic Styles */
+/* === 1. GENERAL STYLES === */
 
-figure.kudos_button {
-	width: 100px;
-	height: 60px;
-	text-align: center;
-}
+/* DIV's */
 
 div.circle {
 	position: relative;
@@ -82,28 +94,28 @@ div.circle {
     -moz-border-radius: 50px 50px 0 0;
     border-radius: 50px 50px 0 0;
     -webkit-transform: rotate(-45deg);
-       -moz-transform: rotate(-45deg);
-        -ms-transform: rotate(-45deg);
-         -o-transform: rotate(-45deg);
-            transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
     -webkit-transform-origin: 0 100%;
-       -moz-transform-origin: 0 100%;
-        -ms-transform-origin: 0 100%;
-         -o-transform-origin: 0 100%;
-            transform-origin: 0 100%;
+	-moz-transform-origin: 0 100%;
+	-ms-transform-origin: 0 100%;
+	-o-transform-origin: 0 100%;
+	transform-origin: 0 100%;
 }
 .heart:after {
     left: 0;
-    -webkit-transform: rotate(45deg);
-       -moz-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-         -o-transform: rotate(45deg);
-            transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);	
+    -moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
     -webkit-transform-origin: 100% 100%;
-       -moz-transform-origin: 100% 100%;
-        -ms-transform-origin: 100% 100%;
-         -o-transform-origin: 100% 100%;
-            transform-origin :100% 100%;
+	-moz-transform-origin: 100% 100%;
+	-ms-transform-origin: 100% 100%;
+	-o-transform-origin: 100% 100%;
+	transform-origin :100% 100%;
 }				
 
 .star {
@@ -121,6 +133,7 @@ div.circle {
    -ms-transform:     rotate(35deg);
    -o-transform:      rotate(35deg);
 }
+
 .star:before {
    border-bottom: 80px solid red;
    border-left: 30px solid transparent;
@@ -138,6 +151,7 @@ div.circle {
    -o-transform:      rotate(-35deg);
    
 }
+
 .star:after {
    position: absolute;
    display: block;
@@ -154,6 +168,14 @@ div.circle {
    -ms-transform:     rotate(-70deg);
    -o-transform:      rotate(-70deg);
    content: '';
+}
+
+/* Kudos Button */
+
+figure.kudos_button {
+	width: 100px;
+	height: 60px;
+	text-align: center;
 }
 
 figure.kudos_button a.filled {
@@ -184,7 +206,6 @@ figure.kudos_button a.filled.heart {
 	-moz-transform: scale(0.3);
 }
 
-
 figure.kudos_button p {
 	line-height: 18px;
 	font-family: "freight-sans-pro", sans-serif;
@@ -199,8 +220,8 @@ figure.kudos_button p {
 }
 
 figure.kudos_button .status {
-		margin-bottom: 5px;
-		margin-top: 4px;
+	margin-bottom: 5px;
+	margin-top: 4px;
 }
 
 figure.kudos_button .status:after {
@@ -208,17 +229,17 @@ figure.kudos_button .status:after {
 }
 
 figure.kudos_button .count {
-		margin-bottom: 5px;
-		margin-top: 4px;
+	margin-bottom: 5px;
+	margin-top: 4px;
 }
 
 figure.kudos_button .count:after {
     content: " Kudos";
 }
 
-/* APP STATES */
+/* === STATES === */
 
-/* waiting */
+/* Waiting */
 figure.kudos_button.waiting a.filled {
 	-webkit-animation-name: hoverPulse;
 	-moz-animation-name: hoverPulse;
@@ -234,10 +255,11 @@ figure.kudos_button.waiting .status {
     display: none;
 }
 
-/* hover */
+/* Hover */
+
 figure.kudos_button.waiting:hover a.filled {
-  -webkit-animation-name: hoverSelect;
-  -moz-animation-name: hoverSelect;
+  	-webkit-animation-name: hoverSelect;
+  	-moz-animation-name: hoverSelect;
 	-webkit-animation-duration: 1s;
 	-moz-animation-duration: 1s;
 	-webkit-animation-iteration-count: 1;
@@ -247,7 +269,7 @@ figure.kudos_button.waiting:hover a.filled {
 }
 
 figure.kudos_button.waiting:hover .count {
-    display: none;
+	display: none;
 }
 
 figure.kudos_button.waiting:hover .status {
@@ -257,7 +279,8 @@ figure.kudos_button.waiting:hover .status:after {
     content: "Dont Move"
 }
 
-/* done */
+/* Complete */
+
 figure.kudos_button.done .status {
 	display: block;
 	text-transform: uppercase;
@@ -276,16 +299,15 @@ figure.kudos_button.done a.filled {
 	display: none;
 }
 
-
 figure.kudos_button.done:hover .status:after {
     content: "Sent!";
 }
 
-/* HIDE STUFF */
+/* === HIDDEN STUFF === */
+
 .hide {
     display: none;
 }
-
 
 iframe{
     height: 1.8em;
